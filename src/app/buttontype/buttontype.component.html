@@ -1,0 +1,98 @@
+<section>
+    <div class="example-label">Basic</div>
+    <div class="example-button-row">
+      <button mat-button>Basic</button>
+      <button mat-button color="primary">Primary</button>
+      <button mat-button color="accent">Accent</button>
+      <button mat-button color="warn">Warn</button>
+      <button mat-button disabled>Disabled</button>
+      <a mat-button href="https://www.google.com/" target="_blank">Link</a>
+    </div>
+  </section>
+  <mat-divider></mat-divider>
+  <section>
+    <div class="example-label">Raised</div>
+    <div class="example-button-row">
+      <button mat-raised-button>Basic</button>
+      <button mat-raised-button color="primary">Primary</button>
+      <button mat-raised-button color="accent">Accent</button>
+      <button mat-raised-button color="warn">Warn</button>
+      <button mat-raised-button disabled>Disabled</button>
+      <a mat-raised-button href="https://www.google.com/" target="_blank">Link</a>
+    </div>
+  </section>
+  <mat-divider></mat-divider>
+  <section>
+    <div class="example-label">Stroked</div>
+    <div class="example-button-row">
+      <button mat-stroked-button>Basic</button>
+      <button mat-stroked-button color="primary">Primary</button>
+      <button mat-stroked-button color="accent">Accent</button>
+      <button mat-stroked-button color="warn">Warn</button>
+      <button mat-stroked-button disabled>Disabled</button>
+      <a mat-stroked-button href="https://www.google.com/" target="_blank">Link</a>
+    </div>
+  </section>
+  <mat-divider></mat-divider>
+  <section>
+    <div class="example-label">Flat</div>
+    <div class="example-button-row">
+      <button mat-flat-button>Basic</button>
+      <button mat-flat-button color="primary">Primary</button>
+      <button mat-flat-button color="accent">Accent</button>
+      <button mat-flat-button color="warn">Warn</button>
+      <button mat-flat-button disabled>Disabled</button>
+      <a mat-flat-button href="https://www.google.com/" target="_blank">Link</a>
+    </div>
+  </section>
+
+<h1>Icon button</h1>
+  <div class="icon">
+    <button mat-icom-button>Tz</button>
+    <button mat-fab>Tz</button>
+    <button mat-mini-fab>Tz</button>
+  </div>
+  <button mat-stroked-button color="primary" disableRipple>Primary</button>
+
+  <h1>Button Toggle </h1>
+  <div>
+    <mat-button-toggle #toggleBtn checked disableRipple disabled>Toggle</mat-button-toggle>
+    {{toggleBtn.checked}}
+  </div>
+
+  <div>
+    <h1>Button Toggle Group</h1>
+    <mat-button-toggle-group #toggleGroup="matButtonToggleGroup">
+      <mat-button-toggle value="Angular">Angular</mat-button-toggle>
+      <mat-button-toggle value="Python">Python</mat-button-toggle>
+      <mat-button-toggle value="Nodejs">Nodejs</mat-button-toggle>
+      <mat-button-toggle value="JavaScript">JavaScript</mat-button-toggle>
+      <mat-button-toggle value="Html">Html</mat-button-toggle>
+    </mat-button-toggle-group>
+    {{toggleGroup.value}}
+  </div>
+  <br>
+  <hr>
+  <div>
+    <h1>Button Toggle Group with ckeck button</h1>
+    <mat-button-toggle-group #toggleGroup1="matButtonToggleGroup" multiple>
+      <mat-button-toggle value="Angular">Angular</mat-button-toggle>
+      <mat-button-toggle value="Python">Python</mat-button-toggle>
+      <mat-button-toggle value="Nodejs">Nodejs</mat-button-toggle>
+      <mat-button-toggle value="JavaScript">JavaScript</mat-button-toggle>
+      <mat-button-toggle value="Html">Html</mat-button-toggle>
+    </mat-button-toggle-group>
+    {{toggleGroup1.value}}
+  </div>
+  <br><hr>
+  <div>
+    <mat-icon>
+      <span class="material-icons">
+        star_rate
+        </span>
+    </mat-icon>
+    <mat-icon> star_rate</mat-icon>
+    <mat-icon>perm_scan_wifi</mat-icon>
+  </div>
+
+
